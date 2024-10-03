@@ -1,27 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #002C63;
+  ;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: #002C63;      /* Tailwind custom color class 'shark-blue' */     
+  background: #ffffff;            
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px; 
+  line-height: 1.6; 
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
